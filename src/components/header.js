@@ -1,6 +1,12 @@
+const headerStyle = {
+    backgroundColor: 'red',
+}
+
 function Header() {
     return (
-        <div>THIS IS A HEADER</div>
+        <div style={headerStyle}>
+            THIS IS A HEADER
+        </div>
     );
 }
 

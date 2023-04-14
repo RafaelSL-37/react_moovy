@@ -1,3 +1,4 @@
+import React from "react"
 import SearchBox from "./search-box"
 
 const searchStyle = {

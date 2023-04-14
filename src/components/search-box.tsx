@@ -1,3 +1,5 @@
+import React from "react"
+
 const searchBoxStyle = {
     backgroundColor: 'grey',
     margin: '2px',

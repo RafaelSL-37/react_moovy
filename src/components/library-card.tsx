@@ -1,13 +1,15 @@
+import React from 'react';
+
 const libraryStyle = {
     backgroundColor: 'green',
     fontColor: 'black',
     margin: '2px',
 }
 
-export default function LibraryCard() {
+export default function LibraryCard(props: any) {
     return (
         <h1 style={libraryStyle}>
-            THIS IS A CARD
+            {props.review.id}
         </h1>
     );
 }

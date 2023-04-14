@@ -1,3 +1,5 @@
+import React from "react"
+
 const tabs = [
     'Reviews',
     'Search',
@@ -9,7 +11,7 @@ const tabStyle = {
     margin: '2px',
     width: '7%',
     height: '50px',
-    textAlign: 'center',
+    //textAlign: 'center',
 }
 
 const bodyTabHolderStyle = {
@@ -22,7 +24,11 @@ export default function BodyTabs() {
         <div style={{backgroundColor: 'darkgrey'}}>
             THIS IS A TABBED HEADER
             <div style={bodyTabHolderStyle}>
-                {tabs.map((tab) => <h2 style={tabStyle}>{tab}</h2>)}
+                {tabs.map((tab) => 
+                    <h2 style={tabStyle}>
+                        {tab}
+                    </h2>
+                )}
             </div>
         </div>
     )

@@ -2,6 +2,7 @@ import BodyTabs from './body-tabs';
 import Library from './library';
 import Search from './search';
 import Account from './account';
+import React from 'react';
 
 const bodyStyle = {
     backgroundColor: 'black',

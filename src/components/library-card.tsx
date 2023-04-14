@@ -1,8 +1,7 @@
 import React from 'react';
 
 const libraryStyle = {
-    backgroundColor: 'green',
-    fontColor: 'black',
+    border: '2px solid red',
     margin: '2px',
 }
 

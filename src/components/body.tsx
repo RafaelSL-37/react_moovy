@@ -3,6 +3,7 @@ import Library from './library';
 import Search from './search';
 import Account from './account';
 import React from 'react';
+import LoginArea from './login-area';
 
 const bodyStyle = {
     backgroundColor: 'black',
@@ -10,7 +11,7 @@ const bodyStyle = {
     display: 'block',
     width: '100%',
     height: 'auto',
-    margin: '2px',
+    border: '2px',
 }
 
 export default function Body() {
@@ -19,6 +20,7 @@ export default function Body() {
     return (
         <div style={bodyStyle}>
             THIS IS A BODY
+            <LoginArea />
             <BodyTabs  />
             <Library />
             <Search />

@@ -39,8 +39,8 @@ const cardVector: ReviewDTO[] = [ //TODO: REMOVE MOCK DATA AND ADD REQUISITION
 ]
 
 const libraryStyle = {
-    backgroundColor: 'darkgrey',
-    margin: '8px',
+    border: '2px solid red',
+    display: 'flex',
 }
 
 export default function Library() {

@@ -2,6 +2,7 @@ import React from "react";
 
 const libraryStyle = {
     backgroundColor: 'blue',
+    border: '2px solid red',
     margin: '2px',
 }
 

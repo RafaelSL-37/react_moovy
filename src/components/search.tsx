@@ -2,8 +2,7 @@ import React from "react"
 import SearchBox from "./search-box"
 
 const searchStyle = {
-    backgroundColor: 'darkgrey',
-    margin: '8px',
+    border: '2px solid red',
 }
 
 export default function Account() {

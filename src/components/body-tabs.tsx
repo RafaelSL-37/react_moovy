@@ -7,16 +7,15 @@ const tabs = [
 ]
 
 const tabStyle = {
-    backgroundColor: 'grey',
-    margin: '2px',
+    border: '2px solid red',
     width: '7%',
-    height: '50px',
-    //textAlign: 'center',
+    height: '40px',
+    textAlign: 'center' as 'center',
 }
 
 const bodyTabHolderStyle = {
     display: 'flex',
-    margin: '2px',
+    border: '2px solid red',
 }
 
 export default function BodyTabs() {

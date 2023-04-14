@@ -1,8 +1,7 @@
 import React from "react"
 
 const searchBoxStyle = {
-    backgroundColor: 'grey',
-    margin: '2px',
+    border: '2px solid red',
 }
 
 export default function SearchBox() {

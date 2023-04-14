@@ -1,8 +1,7 @@
 import React from "react";
 
 const accountStyle = {
-    backgroundColor: 'darkgrey',
-    margin: '8px',
+    border: '2px solid red',
 }
 
 export default function Account() {

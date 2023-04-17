@@ -1,16 +1,15 @@
 import './App.css';
-import Header from './components/header'
-import Footer from './components/footer'
-import Body from './components/body'
 import React from 'react';
+import { routes } from './navigation/router';
+import { useRoutes } from 'react-router-dom';
 
 function App() {
+  let element = useRoutes(routes);
+
   return (
-    <>
-      <Header />
-      <Body />
-      <Footer>Teste</Footer>
-    </>
+    <div>
+      {element}
+    </div>
   );
 }
 

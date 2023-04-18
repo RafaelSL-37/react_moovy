@@ -1,12 +1,12 @@
 
 import React from 'react';
 import { RouteObject } from 'react-router-dom';
-import Search from '../pages/search';
-import Landing from '../pages/landing';
+import Search from '../pages/search/search';
+import Landing from '../pages/landing/landing';
 import NotFound from './not-found';
-import ReviewDetail from '../pages/review-detail';
-import MyAccount from '../pages/my-account';
-import Login from '../pages/login';
+import Reviews from '../pages/reviews/reviews';
+import MyAccount from '../pages/my-account/my-account';
+import Login from '../pages/login/login';
 
 const routes: RouteObject[] = [
     {
@@ -20,7 +20,7 @@ const routes: RouteObject[] = [
     },
     {
         path: "/review/:id",
-        element: <ReviewDetail />,
+        element: <Reviews />,
     },
     {
         path: "/search",

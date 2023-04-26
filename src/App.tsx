@@ -1,4 +1,3 @@
-import './App.css';
 import React from 'react';
 import { routes } from './navigation/router';
 import { useRoutes } from 'react-router-dom';

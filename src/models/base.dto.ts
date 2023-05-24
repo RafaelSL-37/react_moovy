@@ -6,4 +6,4 @@ export class BaseDTO {
   updated_at: Date | undefined;
 
   deleted_at?: Date;
-}
+} //TODO: Remove these "undefined"

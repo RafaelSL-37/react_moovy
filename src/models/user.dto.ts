@@ -11,10 +11,10 @@ export class UserDTO extends BaseDTO {
   date_of_birth: Date | undefined;
 
   reviews?: ReviewDTO[];
-}
+} //TODO: Remove these "undefined"
 
 export class UserCredentialsDTO {
   email: string | undefined;
 
   password: string | undefined;
-}
+} //TODO: Remove these "undefined"

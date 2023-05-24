@@ -11,4 +11,4 @@ export class ReviewDTO extends BaseDTO {
   score: number | undefined;
 
   user?: UserDTO;
-}
+} //TODO: Remove these "undefined"

@@ -1,5 +1,5 @@
 export class PaginationOptionsDTO {
-  page: number | undefined;
+  page: number = 1;
 
-  limit: number | undefined;
+  limit: number = 10;
 }

@@ -1,0 +1,5 @@
+export enum CLIENT_AREA_TABS {
+  MY_ACCOUNT = "MY_ACCOUNT",
+  MY_REVIEWS = "MY_REVIEWS",
+  SEARCH = "SEARCH",
+}

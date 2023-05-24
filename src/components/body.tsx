@@ -1,9 +1,10 @@
 import BodyTabs from './body-tabs';
-import Library from './library';
-import Search from './search';
+import Library from '../pages/reviews/components/library';
+import Search from '../pages/search/components/search';
 import Account from './account';
-import React from 'react';
-import LoginArea from './login-area';
+import React, { useState } from 'react';
+import LoginArea from '../pages/login/components/login-area';
+import { CLIENT_AREA_TABS } from '../constants/tabs';
 
 const bodyStyle = {
     backgroundColor: 'black',
@@ -15,13 +16,13 @@ const bodyStyle = {
 }
 
 export default function Body() {
-    //const { tab, useTab } = TODO: STATE AQUI
+    const [ tab, setTab ] = useState(CLIENT_AREA_TABS.MY_REVIEWS);
 
     return (
         <div style={bodyStyle}>
             THIS IS A BODY
             <LoginArea />
-            <BodyTabs  />
+            <BodyTabs setTabFunction={ setTab } currentTab={ tab } />
             <Library />
             <Search />
             <Account />

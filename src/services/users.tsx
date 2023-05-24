@@ -1,7 +1,7 @@
 import { UserDTO } from "../models/user.dto";
 import api from "../navigation/api";
 
-const getUserById = async (id:string) => {
+const getUserById = async (id:string): Promise<UserDTO | undefined> => {
     try {
         const token = localStorage.getItem('authToken');
 
@@ -17,7 +17,7 @@ const getUserById = async (id:string) => {
     }
 }
 
-const createUser = async (user: UserDTO) => {
+const createUser = async (user: UserDTO): Promise<UserDTO | undefined> => {
     try {
         const token = localStorage.getItem('authToken');
 
@@ -27,7 +27,7 @@ const createUser = async (user: UserDTO) => {
             }
         });
 
-        return response;
+        return response.data;
     } catch (error) {
         console.error("ops! ocorreu um erro" + error);
     }

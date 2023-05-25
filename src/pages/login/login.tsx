@@ -8,7 +8,7 @@ export default function Login() {
             Login <br />
             Password <br /><br />
 
-            <Link to="/my-account">Account Quick Access</Link><br />
+            <Link to="/client">Account Quick Access</Link><br />
             <Link to="/">Landing Page Quick Access</Link><br />
         </div>
     )

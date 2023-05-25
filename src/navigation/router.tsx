@@ -1,12 +1,10 @@
 
 import React from 'react';
 import { RouteObject } from 'react-router-dom';
-import Search from '../pages/search/search';
 import Landing from '../pages/landing/landing';
 import NotFound from './not-found';
-import Reviews from '../pages/reviews/reviews';
-import MyAccount from '../pages/my-account/my-account';
 import Login from '../pages/login/login';
+import Client from '../pages/client/client';
 
 const routes: RouteObject[] = [
     {
@@ -19,16 +17,8 @@ const routes: RouteObject[] = [
         element: <Login />,
     },
     {
-        path: "/review/:id",
-        element: <Reviews />,
-    },
-    {
-        path: "/search",
-        element: <Search />,
-    },
-    {
-        path: "/my-account",
-        element: <MyAccount />,
+        path: "/client",
+        element: <Client />,
     },
     { 
         path: "*", 

@@ -1,5 +1,5 @@
 import React from "react";
-import { ReviewDTO } from "../../../models/review.dto";
+import { ReviewDTO } from "../../../../models/review.dto";
 import LibraryCard from "./library-card";
 import EmptyLibrary from "./library-empty";
 
@@ -43,7 +43,7 @@ const libraryStyle = {
     display: 'flex',
 }
 
-export default function Library() {
+export default function LibraryBody() {
     return (
         <h1 style={libraryStyle}>
             <EmptyLibrary />

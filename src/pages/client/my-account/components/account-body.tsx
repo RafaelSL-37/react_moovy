@@ -4,7 +4,7 @@ const accountStyle = {
     border: '2px solid red',
 }
 
-export default function Account() {
+export default function AccountBody() {
     return (
         <h1 style={accountStyle}>
             THIS IS THE ACCOUNT

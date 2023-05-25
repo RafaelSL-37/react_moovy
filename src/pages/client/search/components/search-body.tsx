@@ -5,7 +5,7 @@ const searchStyle = {
     border: '2px solid red',
 }
 
-export default function Account() {
+export default function SearchBody() {
     return (
         <div style={searchStyle}>
             <SearchBox />

@@ -5,7 +5,7 @@ const libraryStyle = {
     margin: '2px',
 }
 
-export default function LibraryCard(props: any) {
+export default function LibraryCard(props: any) { //TODO: CHANGE THIS TO TYPED
     return (
         <h1 style={libraryStyle}>
             {props.review.id}

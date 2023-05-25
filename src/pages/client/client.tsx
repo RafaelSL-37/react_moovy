@@ -8,7 +8,7 @@ export default function Client() {
         <div>
             <Header />
             <Body />
-            <Footer>THIS IS A FOOTER PT 2</Footer>
+            <Footer />
         </div>
     )
 }

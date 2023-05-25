@@ -1,15 +1,17 @@
 import React from "react"
 import { CLIENT_AREA_TABS } from '../../../constants/tabs'
 
-const tabStyle = {
+const tabStyle = { //TODO: REMOVE ALL STYLES FROM MAIN FILE
     border: '2px solid red',
     padding: '5px',
+    margin: '2px 5px 2px 5px',
     textAlign: 'center' as 'center',
 }
 
 const tabStyleClicked = {
     border: '2px solid red',
     padding: '5px',
+    margin: '2px 5px 2px 5px',
     textAlign: 'center' as 'center',
     backgroundColor: 'red',
 }

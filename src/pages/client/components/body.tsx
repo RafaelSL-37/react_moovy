@@ -21,7 +21,6 @@ export default function ClientBody() {
         case CLIENT_AREA_TABS.MY_ACCOUNT:
             return (
                 <div style={bodyStyle}>
-                    {/* <LoginArea /> */}
                     <BodyTabs setTabFunction={ setTab } currentTab={ tab } />
                     <Account />
                 </div>

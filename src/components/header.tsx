@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "./logo";
 
 const headerStyle = {
     backgroundColor: 'red',
@@ -7,7 +8,7 @@ const headerStyle = {
 function Header() {
     return (
         <div style={headerStyle}>
-            THIS IS A HEADER
+            <Logo />
         </div>
     );
 }

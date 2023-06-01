@@ -3,7 +3,7 @@ import React from 'react';
 import { RouteObject } from 'react-router-dom';
 import Landing from '../pages/landing/landing';
 import NotFound from './not-found';
-import Login from '../pages/login/login';
+// import Login from '../pages/login/login';
 import Client from '../pages/client/client';
 
 const routes: RouteObject[] = [
@@ -12,10 +12,10 @@ const routes: RouteObject[] = [
         element: <Landing />,
         // element: lazy(() => import("../pages/home")), //TODO: IMPLEMENT LAZY
     },
-    {
-        path: "/login",
-        element: <Login />,
-    },
+    // {
+    //     path: "/login",
+    //     element: <Login />,
+    // },
     {
         path: "/client",
         element: <Client />,

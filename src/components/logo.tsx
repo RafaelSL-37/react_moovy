@@ -8,7 +8,7 @@ const style = {
 
 const containerStyle = {
     display: 'flex',
-    'flex-direction': 'rows',
+    'flex-direction': 'row',
 }
 
 export default function Logo() {

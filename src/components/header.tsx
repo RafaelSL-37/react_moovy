@@ -5,10 +5,11 @@ const headerStyle = {
     backgroundColor: 'red',
 }
 
-function Header() {
+function Header(props?: any) {
     return (
         <div style={headerStyle}>
             <Logo />
+            {props.modal}
         </div>
     );
 }

@@ -12,10 +12,6 @@ const routes: RouteObject[] = [
         element: <Landing />,
         // element: lazy(() => import("../pages/home")), //TODO: IMPLEMENT LAZY
     },
-    // {
-    //     path: "/login",
-    //     element: <Login />,
-    // },
     {
         path: "/client",
         element: <Client />,

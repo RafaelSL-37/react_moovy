@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { CLIENT_AREA_TABS } from '../../../constants/tabs';
 import Library from '../library/components/library-body';
 import Account from '../my-account/account';
+import { Link } from 'react-router-dom';
 
 const bodyStyle = {
     backgroundColor: 'black',
@@ -14,32 +15,29 @@ const bodyStyle = {
     border: '2px',
 }
 
-export default function ClientBody() {
-    const [ tab, setTab ] = useState(CLIENT_AREA_TABS.MY_REVIEWS);
-
+function decideTabBody (tab: CLIENT_AREA_TABS) {
     switch (tab) {
         case CLIENT_AREA_TABS.MY_ACCOUNT:
-            return (
-                <div style={bodyStyle}>
-                    <BodyTabs setTabFunction={ setTab } currentTab={ tab } />
-                    <Account />
-                </div>
-            );
+            return <Account />;
+
         case CLIENT_AREA_TABS.MY_REVIEWS:
-            return (
-                <div style={bodyStyle}>
-                    <BodyTabs setTabFunction={ setTab } currentTab={ tab } />
-                    <Library />
-                </div>
-            );
+            return <Library />;
+
         case CLIENT_AREA_TABS.SEARCH:
-            return (
-                <div style={bodyStyle}>
-                    <BodyTabs setTabFunction={ setTab } currentTab={ tab } />
-                    <Search />
-                </div>
-            );
+            return <Search />;
     }
 }
 
-//REMEMBER: MATERIAL UI -> TABBING AND SIDEBAR MENU
+export default function ClientBody() {
+    const [ tab, setTab ] = useState(CLIENT_AREA_TABS.MY_REVIEWS);
+
+    const tabBody = decideTabBody(tab);
+
+    return (
+        <div style={bodyStyle}>
+            <BodyTabs setTabFunction={ setTab } currentTab={ tab } />
+            {tabBody}
+            <Link to='/'>Back To Landing</Link>
+        </div>
+    );
+}

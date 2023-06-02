@@ -1,7 +1,7 @@
 import { UserDTO } from "../models/user.dto";
 import api from "../navigation/api";
 
-const getUserById = async (id:string): Promise<UserDTO | undefined> => {
+const getUserById = async (id:string) => {
     try {
         const token = localStorage.getItem('authToken');
 
@@ -17,7 +17,7 @@ const getUserById = async (id:string): Promise<UserDTO | undefined> => {
     }
 }
 
-const createUser = async (user: UserDTO): Promise<UserDTO | undefined> => {
+const createUser = async (user: UserDTO) => {
     try {
         const token = localStorage.getItem('authToken');
 

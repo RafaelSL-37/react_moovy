@@ -33,4 +33,4 @@ const createReview = async (review: ReviewDTO) => {
     }
 }
 
-export const UserService = { getReviewsByUserId, createReview };
+export const ReviewService = { getReviewsByUserId, createReview };

@@ -13,7 +13,7 @@ export default function Landing() {
 
     return (
         <div>
-            <Header modal={loginModal} />
+            <Header element={loginModal} />
             LANDING PAGE <br /><br />
             <Footer />
         </div>

@@ -1,5 +1,5 @@
 export class MovieDetailsDTO {
-  Title: string | undefined;
+  Title!: string;
   Year: string | undefined;
   Rated: string | undefined;
   Released: string | undefined;
@@ -12,7 +12,7 @@ export class MovieDetailsDTO {
   Language: string | undefined;
   Country: string | undefined;
   Awards: string | undefined;
-  Poster: string | undefined;
+  Poster!: string;
   Ratings: OmdbRatings[] | undefined;
   Metascore: string | undefined;
   imdbRating: string | undefined;

@@ -9,6 +9,7 @@ const style = {
 const containerStyle = {
     display: 'flex',
     'flex-direction': 'row',
+    width: '100%',
 }
 
 export default function Logo() {

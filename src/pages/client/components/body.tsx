@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { CLIENT_AREA_TABS } from '../../../constants/tabs';
 import Library from '../library/components/library-body';
 import Account from '../my-account/account';
-import { Link } from 'react-router-dom';
 
 const bodyStyle = {
     backgroundColor: 'black',
@@ -37,7 +36,6 @@ export default function ClientBody() {
         <div style={bodyStyle}>
             <BodyTabs setTabFunction={ setTab } currentTab={ tab } />
             {tabBody}
-            <Link to='/'>Back To Landing</Link>
         </div>
     );
 }
